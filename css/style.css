@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/* ---------- HEADER ---------- */
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+header .logo{
+    float: left;
+}
+
+/* nav desktop */
+header nav.desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+header nav.desktop ul li{
+    float: left;
+    font-size: 23px;
+    padding: 0 30px;
+    font-style: italic;
+}
+
+header nav.desktop ul li:nth-child(1) > a{
+    color: #EB2D2D;
+}
+
+header nav.desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+/* navi mobile */
+nav.mobile{
+    margin-top: 40px;
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url(../imagens/icon_menu.png);
+    display: none;
+}
+
+nav.mobile ul{
+    /* display: none; */
+    width: 100%;
+    left: 0;
+    top: 130px;
+    border-bottom: 4px solid #EB2D2D;
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+}
+
+nav.mobile li{
+    font-size: 23px;
+    padding: 20px 0;
+    font-style: italic;
+}
+
+nav.mobile li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ---------- BANNER ---------- */
+section.banner{
+    overflow: hidden;
+    width: 100%;
+    height: 650px;
+    background-color: black;
+    background-image: url(../imagens/bg.jpg);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.text-banner{
+    padding: 70px;
+}
+
+.text-banner-single{
+    width: 314px;
+    font-style: italic;
+    margin-top: 30px;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 23px;
+    background-image: url(../imagens/box-text.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+    width: 170px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    left: -20px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+    width: 320px;
+    font-size: 21px;
+    color: black;
+    position: relative;
+    left: -30px;
+    line-height: 70px;
+    background-image: url(../imagens/box-white-text.png);
+}
+
+/* ---------- VEICULOS-DESTAQUE ---------- */
+section.veiculos-destaque{
+    padding: 90px 2%;
+
+}
+
+section.veiculos-destaque .container{
+    /* max-width: 1000px; */
+    padding: 40px 0;
+}
+
+.line-titulo{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.ln1{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 20px;
+    background-color: black;
+}
+
+section.veiculos-destaque .line-titulo h2{
+    position: relative;
+    background-color: white;
+    padding: 0 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* vitrine-destaque */
+.vitrine-destaque{
+    float: left;
+    width: 33.3%;
+}
+
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding-top: 100%;
+    border: 8px solid White;
+    background-size: 100% 100%;
+    background-image: url(../imagens/carro1.jpg);
+}
+
+.vitrine-destaque h2{
+    padding-left: 8px;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.vitrine-destaque p{
+    padding-left: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 8px;
+}
+
+.vitrine-destaque a{
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.btn1{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    border-bottom: 4px solid #B21E1E;
+    color: white;
+    font-size: 20px;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    width: 130px;
+}
+
+/* ---------- SERVICOS-DESCRICAO ---------- */
+section.servicos-descricao{
+    display: flex;
+}
+
+/* half1 */
+.half1{
+    width: 50%;
+    text-align: right;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+}
+
+.half1-wraper{
+    padding-right: 30%;
+    text-align: left;
+    display: inline-block;
+}
+
+.half1-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half1-wraper ul{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.half1-wraper li{
+    margin-left: 15px;
+}
+
+.half1-wraper a{
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/* half2 */
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+.half2 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half2 .depoimento-single{
+    margin-top: 19px;
+
+}
+
+.depoimento-single p{
+    font-size: 22px;
+}
+
+.navigation{
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.nome-depoimento{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
+
+
+/* ---------- MEDIA QUERIES ---------- */
+@media screen and (max-width: 1100px) {
+    .half1{
+        text-align: center;
+    }
+
+    .half1-wraper{
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }   
+}
+
+/* --------------------------------------- */
+/* @media screen and (max-width: 850px) {
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+} */
+
+/* --------------------------------------- */
+@media screen and (max-width: 768px) {
+    section.banner{
+        background-size: cover;
+        background-position: 100px center;
+        height: 80vh;
+    }
+    
+    /* nav */
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    /* servico-descricao */
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+    
+    .half1, .half2{
+        padding: 80px 4%;
+        width: 100%;
+    }
+}
+
+/* ---------------------------------------- */
+@media screen and (max-width: 580px) {
+    /* banner */
+    .text-banner{
+        padding: 30px;
+    }
+
+    .text-banner-single{
+        width: 240px;
+        font-size: 18px;
+    }
+
+    .text-banner .text-banner-single:nth-of-type(4){
+        width: 270px;
+    }
+
+    /* veiculos em destaque */
+    section.veiculos-destaque .line-titulo h2{
+        font-size: 23px;
+    }
+
+    section.veiculos-destaque .container{
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .vitrine-destaque{
+        display: inline-block;
+        float: none;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .vitrine-destaque a{
+        display: inline-block;
+    }
+    
+}
+
+/* ---------------------------------------- */
+@media screen and (max-width: 480px) {
+    .vitrine-destaque{
+        width:100%;
+    }
+}
